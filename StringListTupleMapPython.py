@@ -55,7 +55,7 @@ print("Anonymous")
 
 print(1000 * 'boop')
 
-# Lists!
+# Lists! Lists of strings and numbers
 
 wizard_list = ['spider legs', 'toe of frog', 'eye of newt',
                'bat wing', 'slug butter', 'snake dandruff']
@@ -105,3 +105,49 @@ print(list3)
 
 list4 = [1, 2]
 print(list4 * 5)
+
+# Tuples! Like lists, but with () and cannot be edited
+fibs = (0, 1, 1, 2, 3)
+print(fibs[3])
+
+# Maps! Lists that have keys and values (think dictionary - every word has a definition -- key, value)
+
+favorite_sports = {'Ralph Williams': 'Football',
+                   'Michael Tippett': 'Basketball',
+                   'Edward Elgar': 'Baseball',
+                   'Rebecca Clarke': 'Netball',
+                   'Ethel Smyth': 'Badminton',
+                   'Frank Bridge': 'Rugby'}
+
+print(favorite_sports['Rebecca Clarke'])
+
+# Deleting map items
+del favorite_sports['Ethel Smyth']
+print(favorite_sports)
+
+# Repace value in map
+favorite_sports['Ralph Williams'] = 'Ice Hockey'
+print(favorite_sports)
+
+
+# Random Practice!
+
+# combine lists
+hobbies = ['hockey', 'games', 'driving', 'music', 'puzzles']
+foods = ['peanuts', 'peppers', 'bananas', 'sprouts']
+combined = hobbies + foods
+print(combined)
+
+# counting combatants
+# If there are 3 buildings with 25 ninjas hiding on each roof and 2 tunnels with 40 samurai hiding in each tunnel,
+# how many ninjas and samurai are about to do battle?
+
+fighters = 3 * 25 + 2 * 40
+print(fighters)
+
+# Using Variables
+
+adjective = 'Power'
+noun = 'Rangers'
+catchphrase = 'Go, Go, %s %s!'
+print(catchphrase % (adjective, noun))
