@@ -151,3 +151,73 @@ adjective = 'Power'
 noun = 'Rangers'
 catchphrase = 'Go, Go, %s %s!'
 print(catchphrase % (adjective, noun))
+
+
+
+
+# ##### More Practice with Python Crash Course
+
+# modifying objects in a list
+
+motorcycles = ['honda', 'mitsubishi', 'yamaha']
+print(motorcycles)
+
+motorcycles[0] = 'ducati'
+print(motorcycles)
+
+# append to add an item to the end of a list
+motorcycles.append('honda')
+print(motorcycles)
+
+# building lists from scratch using append
+xmen = []
+xmen.append('cyclops')
+xmen.append('rogue')
+xmen.append('beast')
+xmen.append('jean grey')
+print(xmen)
+
+# insert elements into a list using the insert() method
+xmen.insert(2, 'wolverine')
+print(xmen)
+
+# removing items from a list using the del method. this completely removes the variable, making it unusable
+del xmen[2]
+print(xmen)
+
+# removing items with pop() allows us to still use the variable when we need to. by default, pop removes from the end of a list. we can also specify the index to remove
+# a specific item
+
+xmen = ['cyclops', 'jean grey', 'beast', 'rogue', 'storm', 'wolverine']
+inactive_xmen = []
+
+xmen.pop()
+xmen.pop(3)
+
+print(xmen)
+
+# remove allows us to remove a specific value from a list
+xmen.remove('jean grey')
+print(xmen)
+
+# sorting a list. using sort() will let us alphabetize a list
+
+avengers = ['iron man', 'thor', 'captain america', 'hulk', 'black widow', 'hawkeye']
+avengers.sort()
+print(avengers)
+
+# we can also go in reverse order, by specifying reverse = True
+
+avengers.sort(reverse=True)
+print(avengers)
+
+# we can temprarily sort a list using sorted()
+
+print(sorted(avengers))
+print(avengers)
+
+# we can reverse the order of a list using reverse()
+avengers.reverse()
+print(avengers)
+
+print(len(avengers))
